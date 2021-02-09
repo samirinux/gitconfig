@@ -1,0 +1,36 @@
+[user]
+	email =
+	name =
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = true
+	eol = lf
+	# editor = /usr/local/bin/atom fileeditor
+[color]
+	ui = auto
+# [diff]
+#     tool = bcomp
+# [difftool]
+#     prompt = false
+# [difftool "bcomp"]
+#     trustExitCode = true
+    # cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE"
+# [merge]
+    # tool = bcomp
+# [mergetool]
+    # prompt = false
+# [mergetool "bcomp"]
+    # trustExitCode = true
+    # cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+[alias]
+	ls = log --pretty=\"%Cblue%cd %Cgreen%h %Cred%an %Creset%s\"
+	co = checkout
+	br = branch
+	ci = commit
+	ca = commit --amend
+	st = status
+	last = log -1 HEAD
+	cof = checkout --
+	cob = checkout -b
+	dt = difftool
+	stl = stash list
